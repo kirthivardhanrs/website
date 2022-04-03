@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -28,8 +28,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -656,6 +657,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-equation" class="md-nav__link">
+    Getting the equation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#computing-eccentricity" class="md-nav__link">
     Computing Eccentricity
   </a>
@@ -713,6 +728,20 @@
     <li class="md-nav__item">
       <a href="../binary_system_total_energy/" class="md-nav__link">
         Total Energy of Binary System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lagrange_points/" class="md-nav__link">
+        Lagrange points
       </a>
     </li>
   
@@ -1162,6 +1191,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../optics/magnitude/magnitude_systems/" class="md-nav__link">
+        Magnitude Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../optics/magnitude/extinction/" class="md-nav__link">
+        Extinction
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1493,6 +1550,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-equation" class="md-nav__link">
+    Getting the equation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#computing-eccentricity" class="md-nav__link">
     Computing Eccentricity
   </a>
@@ -1548,11 +1619,18 @@
 
 
 <h1 id="the-trajectory-of-a-particle-in-orbit">The Trajectory of a Particle in Orbit</h1>
-<p>We note that the gravitational force, <span class="arithmatex">\(\vec F_g\)</span> is still defined as below:</p>
-<div class="arithmatex">\[\vec F_g = - G \frac{Mm}{r^2} \hat r\]</div>
-<p>From here, since we note that <span class="arithmatex">\(\vec F_{net} = \vec F_g\)</span>, we have the following expression:</p>
-<div class="arithmatex">\[\vec F_g = - G \frac{Mm}{r^2} \hat r = m\vec a\]</div>
-<p>From here we can derive the centripetal acceleration at any point, <span class="arithmatex">\(\vec a\)</span>:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In order to prevent potential permanent trauma please read through the "Conic Sections" page first and only then will this section make sense.</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>From Kepler's 1st Law, we know that orbits are ellipses and mathematically we can represent the general equation for said ellipse in polar coordinates as such:</p>
+<div class="arithmatex">\[r=\frac{p}{1+\varepsilon\cos\theta}\]</div>
+<p>From here, we can get the general shape or <strong>trajectory</strong> of an orbit, which is well, an ellipse, but we want to rewrite this general equation in the context of a particle in orbit.</p>
+<h2 id="getting-the-equation">Getting the equation</h2>
+<p>A usual way (the only way) of tackling problems like these, is just write down all the equations we know, manipulate them, and hope we get what we want, so that is exactly what we will do.</p>
+<p>The net force on the particle in orbit is the gravitational force since it is the only force acting on it, so it follows from Newton's laws that:</p>
+<div class="arithmatex">\[m\vec a=- G \frac{Mm}{r^2} \hat r \]</div>
 <div class="arithmatex">\[\vec a = - G \frac{M}{r^2} \hat r\]</div>
 <p>Since we have this expression, we can now introduce <span class="arithmatex">\(\vec L\)</span> to these expressions:</p>
 <div class="arithmatex">\[\vec a \times \vec L = - G \frac{M}{r^2} \hat r \times \vec L\]</div>
@@ -1735,7 +1813,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
